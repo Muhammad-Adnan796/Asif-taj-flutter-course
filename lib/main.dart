@@ -1,3 +1,4 @@
+import 'package:chapter_2_asif_taj/chapter%203/lottery_app.dart';
 import 'package:chapter_2_asif_taj/forgot.dart';
 import 'package:chapter_2_asif_taj/login.dart';
 import 'package:chapter_2_asif_taj/signup.dart';
@@ -24,6 +25,7 @@ class _MyAppState extends State<MyApp> {
         "/login" : (context) => LoginPage(),
          "/signup" : (context) => Signupage(),
          "/forgot" : (context) => ForgotPage(),
+              "/lottery" : (context) => LotteryApp(),
       },
     );
   }

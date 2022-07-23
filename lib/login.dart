@@ -200,12 +200,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 onPress: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Signupage(),
-                    ),
-                  );
+                   Navigator.pushNamed(context, "/lottery");
                 },
                 backgroundColor: Color(0xffF97030),
               ),
