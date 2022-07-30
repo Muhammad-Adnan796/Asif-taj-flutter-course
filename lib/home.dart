@@ -1,3 +1,4 @@
+import 'package:asif_taj_chapter_6/chapter_7.dart';
 import 'package:asif_taj_chapter_6/chates.dart';
 import 'package:flutter/material.dart';
 
@@ -36,8 +37,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 icon: const Icon(Icons.more_vert),
                 itemBuilder: (context) => [
                       const PopupMenuItem(
+                      //  onTap: () async {
+                      //     Navigator.push(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //         builder: (context) => ReadMText(),
+                      //       ),
+                      //     );
+                      //  },
                         value: 1,
                         child: Text("New Group"),
+                       
                       ),
                       const PopupMenuItem(
                         value: 1,
@@ -52,8 +62,8 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: const TabBarView(children: [
           Icon(Icons.camera_alt),
-         Chates(),
-         Chates(),
+          Chates(),
+          Chates(),
           Chates(),
         ]),
       ),

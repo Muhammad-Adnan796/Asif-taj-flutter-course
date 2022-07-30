@@ -1,3 +1,4 @@
+import 'package:asif_taj_chapter_6/chapter_7.dart';
 import 'package:asif_taj_chapter_6/home.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,8 @@ theme: ThemeData(
   primarySwatch: Colors.teal
 ),
 
-      home: HomeScreen(),
+      home: ReadMText(), 
+      // HomeScreen(),
     );
   }
 }
