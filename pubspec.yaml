@@ -38,6 +38,7 @@ dependencies:
   badges: ^2.0.3
   animated_text_kit: ^4.2.2
   pin_code_fields: ^7.4.0
+  math_expressions: ^2.3.1
   
 dev_dependencies:
   flutter_test:
