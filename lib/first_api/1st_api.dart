@@ -47,16 +47,37 @@ class _FirstApiState extends State<FirstApi> {
                   physics: BouncingScrollPhysics(),
                     itemCount: postList.length,
                     itemBuilder: (context,index){
-                  return Card(
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(
+elevation: 20,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          children: [
+                            ListTile(
 
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ListTile(
+                              title: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text("Title\n"+postList[index].title.toString()),
+                              ),
+                              subtitle: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text("Description\n"+postList[index].body.toString()),
+                              ),
+                              leading: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(postList[index].id.toString()),
+                              ),
+                              trailing: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(postList[index].userId.toString()),
+                              ),
+                            ),
 
-                        title: Text("Title\n"+postList[index].title.toString()),
-                        subtitle: Text("Description\n"+postList[index].body.toString()),
-                        leading: Text(postList[index].id.toString()),
-                        trailing: Text(postList[index].userId.toString()),
+
+                          ],
+                        ),
                       ),
                     ),
                   );
